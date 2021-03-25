@@ -1,0 +1,44 @@
+.statistics{
+    padding:50px 0;
+    @include headSection();
+
+    .item{
+        padding:25px 10px;
+        border-radius: 0px 0px 50px;
+        overflow: hidden;
+        transition: all .3s ease ;
+        .icon-i{
+            .icon{
+                font-size:50px;
+                color: $maintColor;
+            }
+        }
+
+        .text{
+            font-size: 24px;
+            line-height: 29px;
+            .number{
+                color:$maintColor;
+                font-weight:bold;
+            }
+        }
+
+        &:hover{
+            box-shadow: 0px 10px 30px -20px $maintColor;
+            -webkit-box-shadow: 0px 10px 30px -20px $maintColor;
+            -moz-box-shadow: 0px 10px 30px -20px $maintColor;
+            -o-box-shadow: 0px 10px 30px -20px $maintColor;
+            -ms-box-shadow: 0px 10px 30px -20px $maintColor;
+            background-color: #fff;
+            /* 
+            transform: scale(1.05,1.05);
+            -webkit-transform: scale(1.05,1.05);
+            -moz-transform: scale(1.05,1.05);
+            -o-transform: scale(1.05,1.05);
+            -ms-transform: scale(1.05,1.05);
+             */
+        }
+
+    }
+
+}

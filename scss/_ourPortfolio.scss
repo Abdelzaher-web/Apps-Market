@@ -1,0 +1,25 @@
+.ourPortfolio{
+    background:#f9f9f9 url(../img/style.png) no-repeat right;
+    background-position: 100% 90%;
+    background-size:20% 80%;
+    overflow: hidden;
+    padding:50px 0px;
+
+    @include headSection();
+
+    @media (max-width:991px){
+        background-position: 100% 40%;
+        background-size:101% 70%;
+    }
+
+    .item{
+        transition: transform .3s ease-in-out;
+        img{
+            width:100%;
+            @include useSelectNone();
+        }
+        &:hover{
+            @include transformScale();
+        }
+    }
+}

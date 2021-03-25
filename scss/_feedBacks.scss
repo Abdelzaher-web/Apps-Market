@@ -1,0 +1,68 @@
+.feedBacks{
+    padding:50px 0 100px 0 ;
+    @media (max-width:991px){
+        padding-bottom: 150px;
+    }
+    @include headSection();
+    
+    .text{
+        padding: 20px 0;
+        @include paddingText();
+        position: relative;
+        .btn{
+            position:absolute;
+            top:20px;
+            right:10px;
+            padding:10px 25px;
+            border-radius:10px;
+            background-color:#EFEFFE;
+            color:#656565;
+            font-size:24px;
+            
+            &:hover{
+                color:$maintColor
+            }
+            @media (max-width:991px){
+                position: relative;
+                margin:0 0 0 5px;
+            }
+        }
+    }
+
+    .feedback{
+        background-color:#EFEFFE;
+        overflow: hidden;
+
+        .img{
+            height:300px;
+            background:url(../img/feedBack01.png) no-repeat;
+            background-size:cover;
+            overflow: hidden;
+        }
+
+        .text{
+            padding:10px 0 0 10px;
+            font-size:24px;
+            img{
+                width:50%;
+                margin:10px 0 10px 10px;
+            }
+            
+            p{
+                word-wrap: break-word !important;
+                padding: 0 10px;
+                overflow: hidden;
+                .name{
+                    display:block;
+                    margin: 7px 0;
+                }
+                .email{
+                    color:$maintColor
+                }
+            }
+
+        }
+
+    }
+
+}

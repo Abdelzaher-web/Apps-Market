@@ -1,0 +1,92 @@
+.footer{
+    padding:100px 0 50px 0;
+    background-color:#EBEBF8;
+    @media (max-width:991px){
+        padding-top: 150px;
+    }
+
+    .follow{
+        padding:20px 0;
+        
+        .icons{
+            margin:20px 0 0 0 ;
+
+            img{
+                cursor: pointer;
+            }
+
+            .icon{
+                display: inline-block;
+                color: #6d6565;
+                border: 1px solid #6d6565;
+                border-radius: 50%;
+                width: 30px;
+                height:30px;
+                padding: 5px;
+                cursor:pointer;
+                transition: all .3s ease;
+
+                &:hover{
+                    color: #fff;
+                    background-color: $maintColor;
+                    border-color:$maintColor;
+                }
+            }
+        }
+    }
+
+    @mixin footerList{
+        li{
+            width:200px;
+            @include paddingText();
+            &:first-child{
+                color:#000;
+                font-weight:bold;
+                margin-bottom:20px;
+            }
+
+            &:not(:first-child){
+                color:#6d6565 ;
+                cursor:pointer;
+                &:hover{
+                    color:$maintColor
+                }
+            }
+        }
+    }
+
+    .links,.support,.contact{
+        @include footerList();
+    }
+
+}
+
+.copyRight{
+    padding: 20px 0;
+    color:#6d6565;
+    background-color: #EBEBF8;
+
+    .text{
+        @media (max-width:991px){
+            margin-bottom:20px;
+        }
+        &:hover{
+            color:$maintColor
+        }
+    }
+    .optons{
+        text-align: right;
+        span{
+            margin:0 3px;
+
+            &:not(:nth-child(2)){
+                cursor:pointer;
+            }
+
+            &:hover{
+                color:$maintColor
+            }
+        }
+    }
+
+}

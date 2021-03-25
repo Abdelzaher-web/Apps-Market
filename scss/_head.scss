@@ -1,0 +1,414 @@
+$maintColor:#3C41DF;
+.head{
+    background:transparent;
+    color: #fff;
+    padding: 15px 0 7.5px 0 ;
+    transition: all .3s ease;
+
+    .brand{
+        img{
+            width:200px;
+            height: 35px;
+        }
+    }
+
+    .links{
+        font-size: 18px;
+        font-weight:bold;
+        text-transform:capitalize;
+        text-align: right;
+        li{
+            position: relative;
+            display: inline-block;
+            margin-right: 0px;
+            line-height: normal;
+            cursor:pointer;
+            transition: transform .3s ease-in-out;
+            padding:10px 5px;
+            
+            span{
+                transition: width .5s ease;
+                position: absolute;
+                bottom: 0px;
+                left:0px;
+                background-color:$maintColor;
+                height:4px;
+                width: 0px;
+                border:none
+            }
+
+            &:hover{
+                span{
+                    width: 100%;
+                }
+            }
+        }
+        .active{
+            span{
+                width: 100%;
+            }
+            &:hover{
+                span{
+                    width: 100%;
+                }
+            }
+        }
+        .btn{
+            font-size: 18px;
+            font-weight:bold;
+            background-color:#fff;
+            color:#000;
+            line-height: normal;
+            padding: 5px 20px 9px;
+            border-radius:20px;
+            border-width:3px;
+            transition: all .3s ease-in-out;
+    
+            &:hover{
+                border: 3px solid #fff;
+                background-color:transparent;
+                color: #fff;
+            }
+        }
+    }
+    
+    .button{
+        text-align:right;
+    }
+
+    .button-mobile{
+        position: absolute;
+        top:8px;
+        right:8px;
+        color:#fff;
+        padding:10px;
+        border-radius:10px;
+        cursor:pointer;
+        transition: all .3s ease-in-out;
+        z-index: 3;
+
+        @media(min-width:991px){
+            display: none;
+        }
+
+        &:hover{
+            background-color: #fff;
+            color:$maintColor;
+        }
+
+        .icon{
+            position: relative;
+            font-size:35px;
+
+        }
+    }
+
+    .overlay{
+        position: fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        background-color: rgba(0,0,0,.7);
+        z-index: 998;
+
+        .closeButton{
+            font-size:27px;
+            font-weight:bold;
+            position: fixed;
+            top:2%;
+            right:6%;
+            color:#fff;
+            cursor:pointer;
+            z-index: 1000;
+        }
+        
+    }
+
+
+    .links-mobile{
+        position: fixed;
+        top:0px;
+        left:0px;
+        background:#ffff;
+        color: $maintColor;
+        height: 100%;
+        z-index:999;
+        padding:5px 0 5px 10px;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transition: transform .4s ease;
+
+        img{
+            width: 80%;
+            padding: 1% 0;
+            margin: 0 0 2% 0;
+            border-bottom: 1px solid;
+        }
+
+        li{
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform:capitalize;
+            padding: 7px 0;
+            cursor:pointer;
+            
+            span{
+                position: absolute;
+                bottom:0px;
+                left:0px;
+                height:3px;
+                width: 0%;
+                background-color: $maintColor;
+                transition: all .5s ease;
+
+            }
+            
+            &:hover{
+                span{
+                    width:100%;
+                }
+            }
+
+        }
+
+        .active{
+            span{
+                width: 100%;
+            }
+            &:hover{
+                span{
+                    width: 100%;
+                }
+            }
+        }
+
+        .btn{
+            margin: 2% 0 0 0 ;
+            padding:10px;
+            border-radius:10px;
+            background-color:$maintColor;
+            color: #fff;
+        }
+
+
+    }
+    .list-active{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+    }
+
+}
+
+
+
+.head-active{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:996;
+    color: $maintColor;
+    background:#fff !important;
+    padding: 5px 0;
+    box-shadow: 0px 1px 5px -1px $maintColor;
+
+    .brand{
+        img{
+            width:70%;
+            height: 35px;
+            cursor: pointer;
+
+            @media (max-width:576px){
+                width:100%
+            }
+        }
+    }
+
+    .links{
+        font-size: 18px;
+        font-weight:bold;
+        text-transform:capitalize;
+        text-align: right;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        overflow: hidden;
+
+        li{
+            position: relative;
+            display: inline-block;
+            margin-right: 0px;
+            line-height: normal;
+            cursor:pointer;
+            transition: transform .3s ease-in-out;
+            padding:5px 10px 5px 0;
+            
+            span{
+                transition: width .3s ease;
+                position: absolute;
+                bottom: 0px;
+                left:0px;
+                background-color:$maintColor;
+                height:4px;
+                width: 0px;
+                border:none
+            }
+
+            &:hover{
+                span{
+                    width: 100%;
+                }
+            }
+        }
+        .btn{
+            font-size: 18px;
+            font-weight:bold;
+            background-color:$maintColor;
+            color:#fff;
+            line-height: normal;
+            padding: 5px 20px 9px;
+            border-radius:20px;
+            border-width:3px;
+            transition: all .3s ease-in-out;
+    
+            &:hover{
+                border: 3px solid $maintColor;
+                background-color:transparent;
+                color: $maintColor;
+            }
+        }
+    }
+    
+    .button{
+        text-align:right;
+    }
+
+    .button-mobile{
+        position: absolute;
+        top:1px;
+        right:8px;
+        color:$maintColor;
+        padding:5px;
+        border-radius:5px;
+        cursor:pointer;
+        transition: all .3s ease-in-out;
+        z-index: 3;
+
+        @media(min-width:991px){
+            display: none;
+        }
+
+        &:hover{
+            background-color: $maintColor;
+            color:#fff;
+        }
+
+        .icon{
+            position: relative;
+            font-size:30px;
+
+        }
+    }
+
+    .overlay{
+        position: fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+        background-color: rgba(0,0,0,.7);
+        z-index: 998;
+
+        .closeButton{
+            font-size:27px;
+            font-weight:bold;
+            position: fixed;
+            top:2%;
+            right:6%;
+            color:#fff;
+            cursor:pointer;
+            z-index: 1000;
+        }
+        
+    }
+
+
+    .links-mobile{
+        position: fixed;
+        top:0px;
+        left:0px;
+        background:#ffff;
+        color: $maintColor;
+        height: 100%;
+        z-index:999;
+        padding:5px 0 5px 10px;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transition: transform .4s ease;
+
+        img{
+            width: 80%;
+            padding: 1% 0;
+            margin: 0 0 2% 0;
+            border-bottom: 1px solid;
+        }
+
+        li{
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform:capitalize;
+            padding: 7px 0;
+            cursor:pointer;
+            
+            span{
+                position: absolute;
+                bottom:0px;
+                left:0px;
+                height:3px;
+                width: 0%;
+                background-color: $maintColor;
+                transition: all .5s ease;
+
+            }
+            
+            &:hover{
+                span{
+                    width:100%;
+                }
+            }
+
+        }
+
+        .btn{
+            margin: 2% 0 0 0 ;
+            padding:10px;
+            border-radius:10px;
+            background-color:$maintColor;
+            color: #fff;
+        }
+
+
+    }
+    .list-active{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+    }
+
+}
