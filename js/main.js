@@ -1,3 +1,7 @@
+/* 
+  Web developer : Youssef Abdelzaher
+  Web developer website url : https://youssef-abdelzaher.netlify.app/
+*/
 window.onload = ()=>{
     setTimeout(() => {
       $(".startWindow").fadeOut("slow",()=>{

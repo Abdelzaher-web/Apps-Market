@@ -1,9 +1,12 @@
-========== My-template-website-v2 ==========
+# ========== Apps Market ==========
 
-=> I finshed this web site after two day .
+## Web developer : Youssef Abdelzaher
+## Web developer website url : https://youssef-abdelzaher.netlify.app/
 
-=> I did this web site by { html,javascript,scss,jquery } .
+### => I finshed this web site after two day .
 
-=> I got this design from free template web site .
+### => I did this web site by { html,javascript,scss,jquery } .
 
-=> I add many things to this design .
+### => I got this design from free template web site .
+
+### => I add many things to this design .
